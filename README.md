@@ -11,8 +11,6 @@ Shows current weather of cities in the world.
   * Weather API
 
 #### Tools
-  *  Package management
-     * Bower
   * Testing
      * Mocha
      * Chai
