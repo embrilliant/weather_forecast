@@ -1,4 +1,3 @@
-//$(function() {
 
     var newCitiesList = new CitiesList(["berlin", "redmond", "cupertino", "stockholm", "gibraltar"]);
 
@@ -8,7 +7,7 @@
         $("#container").html("");
 
         for (var i = 0; i < newCitiesList.getCount(); i++) {
-            //var city = new City( citiesArray[i] );
+            
             var city = newCitiesList.getCity( newCitiesList.getCitiesList()[i] );
 
             city.doSomeUIToData(function (data, obj) {
@@ -42,23 +41,6 @@
         }
     };
 
-    /*function add() {
-        var userInput = $("input").val(); //cityName
-        newCitiesList.addNewCity(userInput);
-        newCitiesList.showArrayInConsole();
-    }
-
-    function remove() {
-        var userInput = $("input").val();
-        newCitiesList.removeCity(userInput);
-        newCitiesList.showArrayInConsole();
-    }
-
-    function deleteAll() {
-        newCitiesList.deleteAllCities();
-        newCitiesList.showArrayInConsole();
-    }*/
-
     $("#btnAdd").on("click", function(e) {
         e.preventDefault();
         actions.add();
@@ -78,7 +60,4 @@
     });
 
     updateUI();
-
-//});
-
 
